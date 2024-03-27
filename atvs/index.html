@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 50%;
+            margin: 50px auto;
+        }
+        .borda {
+            position: relative;
+            border: 2px solid black;
+            padding: 20px;
+        }
+        .texto-na-borda {
+            position: absolute;
+            top: -20px;
+            left: -20px; 
+            background-color: white;
+            padding: 5px 10px;
+        }
+        .containe {
+            width: 100%;
+            margin: 25px auto;
+        }
+        .bda {
+            position: absolute;
+            border: 2px solid black;
+            padding: 135px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .texto-na-bord {
+            position: absolute;
+            top: -18px;
+            left: -20px; 
+            background-color: white;
+            padding: 0px 5px;
+        }
+        
+        .botoes {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+        <div class="borda">
+            <span class="texto-na-borda">Dados Pessoais</span>
+            <label for="iptNome">Nome:</label>
+            <input type="text" id="iptNome"><br><br>
+            <label for="iptSenha">Senha:</label>
+            <input type="password" id="iptSenha"><br><br>
+            <label for="iptNasc">Data de Nascimento:</label>
+            <input type="date" id="iptNasc"><br><br>
+            <label for="iptEnd">Endereço:</label>
+            <input type="text" id="iptEnd"><br><br>
+            <label for="iptBai">Bairro:</label>
+            <input type="text" id="iptBai">
+            <label for="iptCid">Cidade:</label>
+            <input type="text" id="iptCid"><br><br>
+            <label for="iptCe">CEP:</label>
+            <input type="number" id="iptCe">
+            <label for="slcEstado">Estado:</label>
+            <select name="slcEstado" id="slcEstado">
+                <option value="1">Ceará</option>
+                <option value="2">Bahia</option>
+                <option value="3">Alagoas</option>
+                <option value="4">MaranhÃo</option>
+                <option value="5">Paraíba</option>
+                <option value="6">Pernambuco</option>
+                <option value="7">Piauí</option>
+                <option value="8">Rio Grande do Norte</option>
+                <option value="9">Sergipe</option>
+            </select>
+        </div>
+        <div class="containe">               
+            <div class="bda">
+                <span class="texto-na-bord">Dados profissionais</span>
+                Natureza do Cargo <br>
+                <input type="radio" id="iptGerễncia" name="iptCargo">
+                <label for="iptGerễncia">Gerência</label>
+                <input type="radio" id="iptFinanceiro" name="iptCargo">
+                <label for="iptFinanceiro">Financeiro</label>
+                <input type="radio" id="iptRecepcao" name="iptCargo">
+                <label for="iptRecepcao">Recepção</label>
+                <input type="radio" id="iptAdministrativo" name="iptCargo">
+                <label for="iptAdministrativo">Administrativo</label>
+                <input type="radio" id="iptJuri" name="iptCargo">
+                <label for="iptJuri">Jurídico</label><br><br>
+                Área de interesse<br>
+                <input type="checkbox" id="area1" name="area1" value="computacao">
+                <label for="area1">Computação</label>
+                <input type="checkbox" id="area2" name="area2" value="Financeiro">
+                <label for="area2">Financeiro</label>
+                <input type="checkbox" id="area3" name="area3" value="Recepção">
+                <label for="area3">Recepção</label>
+                <input type="checkbox" id="area4" name="area4" value="engenharia">
+                <label for="area4">Engenharia</label>
+                <input type="checkbox" id="area5" name="area5" value="matematica">
+                <label for="area5">Matemática</label><br><br>
+                <label for="txtcurriculo">Mini-Currículo</label><br>
+                <textarea name="txtcurriculo" id="txtcurriculo" cols="100" rows="5">Digite seu Currículo</textarea>
+            </div>
+        </div>
+    </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="botoes">
+        <button type="submit">Enviar</button>
+        <input type="reset" value="Limpar">
+    </div>
+</body>
+</html>
